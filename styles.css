@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+.page{
+    width: 100%;
+    min-height: 900px;
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.content{
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0px 20px 10px 20px hsl(216deg 60% 8%), 0px 20px 15px 40px hsl(216deg 50% 14%);
+    position: relative;
+}
+.eth{
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+}
+.v-icon{
+    visibility: hidden;
+    align-self: center;
+    position: absolute;
+    top: 25%;
+}
+.eth:hover + .v-icon{
+    visibility: visible;
+}
+.eth:hover{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    cursor: pointer;
+    
+}
+.title{
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin: 20px 0;
+}
+.pr-da{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.price{
+    color: hsl(178, 100%, 50%);
+    font-size: 18px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.price img{
+    width: 10px;
+    height: 18px;
+    margin-right: 8px;
+}
+.date{
+    width: 50%;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.date img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+hr{
+    border:1px solid hsl(215, 32%, 27%);
+}
+.creator{
+    margin: 20px 0;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+.creator img{
+    margin-right: 10px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.attribution {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin: 20px;
+}
+span{
+    color: white;
+}
+span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.attribution a{
+    color: hsl(178, 100%, 50%);
+}
